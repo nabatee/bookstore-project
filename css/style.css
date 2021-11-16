@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  line-height: 1.8;
+  background: gray;
+  display: 100vh;
+}
+
+/* nav */
+
+nav {
+  background: #333;
+  display: flex;
+  justify-content: center;
+}
+
+nav .current {
+  background: lightseagreen;
+}
+
+nav h1 {
+  font-size: 2rem;
+  margin: 5px 60% 0 auto;
+  position: relative;
+  padding: 10px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* list  */
+ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 1.5rem;
+  float: right;
+}
+
+/* list items  */
+
+li {
+  float: left;
+  padding-right: 40px;
+}
+
+/* list item links */
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+ul li a:hover {
+  background-color: lightseagreen;
+}
+
+/* showcase  */
+.showcase {
+  display: block;
+  background: url("/img/showcase.jpg") #333 no-repeat center center/cover;
+  opacity: 80%;
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  padding: 10rem;
+}
+
+.showcase h3 {
+  font-size: 80px;
+  color: #fff;
+  opacity: 100%;
+}
+
+.showcase h3 span {
+  color: lightseagreen;
+}
+
+.showcase p {
+  font-size: 1.5rem;
+}
+
+/* button  */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #333;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  border-radius: 9%;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.btn:hover {
+  background-color: lightseagreen;
+}
+
+/* 2 boxes below  */
+
+.link {
+  background: url("/img/showcase2.jpg") #333 no-repeat center center/cover;
+  height: 550px;
+  width: 50%;
+  float: left;
+}
+
+.box {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+  width: 50%;
+  height: 550px;
+}
+
+.box h1 {
+  margin-top: 7rem;
+  font-size: 50px;
+  color: #fff;
+}
+
+.box h1 span {
+  color: lightseagreen;
+}
+
+.box p {
+  margin-top: -10rem;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+/* icons */
+
+.container {
+  display: flex;
+  justify-content: auto;
+  font-size: 1.3rem;
+}
+
+.container .fas {
+  font-size: 5rem;
+}
+
+#location {
+  left: 0;
+  width: 33.3%;
+  text-align: center;
+  padding: 40px;
+  background: #333;
+}
+#cats {
+  width: 33.3%;
+  text-align: center;
+  padding: 40px;
+  background: lightseagreen;
+}
+#books {
+  right: 0;
+  width: 33.3%;
+  text-align: center;
+  padding: 40px;
+  background: #333;
+}
+
+footer {
+  display: block;
+  background: #333;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+/* about page */
+
+#about {
+  background: gray;
+  padding-left: 10rem;
+  width: 100%;
+  margin-top: 1px;
+}
+
+.head h1 {
+  padding-top: 2rem;
+  padding-left: 10rem;
+  font-size: 80px;
+  color: #fff;
+}
+
+.head span {
+  color: lightseagreen;
+}
+
+#about p {
+  padding-top: 2rem;
+  font-size: 2rem;
+  float: left;
+  width: 50%;
+  left: 0;
+  margin-right: 130px;
+}
+
+#imag {
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+}
+#about img {
+  border-radius: 50%;
+  height: 550px;
+  width: 800px;
+}
+
+#content {
+  display: block;
+  padding-bottom: 5rem;
+  background: url("/img/store.jpg") black no-repeat center center/cover;
+}
+
+#content h3 {
+  font-size: 7rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+#woman {
+  background: lightseagreen;
+  height: 250px;
+  width: 80%;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  margin: auto;
+  padding-left: 15px;
+  margin-top: 60px;
+}
+
+#woman p {
+  padding: 3rem 3rem;
+}
+
+#woman img {
+  border-radius: 100%;
+  width: 500px;
+  height: 200px;
+}
+
+#women {
+  background: lightseagreen;
+  height: 250px;
+  width: 80%;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  margin: auto;
+  padding-left: 15px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#women p {
+  padding: 3rem 3rem;
+}
+
+#women img {
+  border-radius: 100%;
+  width: 220px;
+  height: 210px;
+}
+
+/* contact page */
+
+.form {
+  background: gray;
+  width: 100%;
+  margin-top: 1px;
+  font-size: 2rem;
+  margin: 10rem 20rem;
+  margin-left: 20%;
+  margin-right: 8%;
+}
+
+.form h1 {
+  padding-bottom: 2rem;
+  font-size: 120px;
+  color: #fff;
+}
+
+.form span {
+  color: lightseagreen;
+}
+
+.form p {
+  padding-bottom: 2rem;
+}
+
+.form #name {
+  width: 80%;
+  height: 60px;
+  border: 3px gray;
+  border-radius: 5px;
+}
+.form #email {
+  width: 80%;
+  height: 60px;
+  border: 3px gray;
+  border-radius: 5px;
+}
+.form #message {
+  width: 80%;
+  height: 300px;
+  border: 3px lightseagreen;
+  border-radius: 5px;
+}
+
+.form #submit {
+  background: lightseagreen;
+  padding: 1.4rem 2.2rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.form #submit:hover {
+  background: #333;
+  cursor: pointer;
+}
+
+#footer {
+  font-size: 2rem;
+}
