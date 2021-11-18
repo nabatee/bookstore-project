@@ -26,6 +26,7 @@ nav .current {
 
 nav h1 {
   font-size: 2rem;
+  flex: 1;
   margin: 5px 60% 0 auto;
   position: relative;
   padding: 10px 16px;
@@ -36,6 +37,7 @@ nav h1 {
 nav h1 a {
   text-decoration: none;
   color: #fff;
+  display: block;
 }
 
 /* list  */
@@ -52,6 +54,7 @@ ul {
 li {
   float: left;
   padding-right: 40px;
+  font-size: 2rem;
 }
 
 /* list item links */
@@ -241,17 +244,59 @@ footer {
   text-align: center;
 }
 
-#woman {
-  background: lightseagreen;
-  height: 250px;
-  width: 80%;
-  align-items: center;
-  border-radius: 10px;
-  font-size: 1.7rem;
+/* sssssssssss */
+
+#woman p {
   margin: auto;
-  padding-left: 15px;
-  margin-top: 60px;
+  padding: 1rem;
+  padding-left: 1rem;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
+
+/* WOMEN */
+
+#women,
+#woman {
+  flex-wrap: wrap;
+  height: 390px;
+  width: 98%;
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+#woman img {
+  border-radius: 100%;
+  width: 180px;
+  height: 160px;
+  shape-outside: circle();
+  float: left;
+  padding: 0.8rem;
+  margin-right: 3rem;
+}
+
+#women img {
+  border-radius: 100%;
+  width: 180px;
+  height: 160px;
+  shape-outside: circle();
+  float: left;
+  padding: 0.3rem;
+  margin-right: 3rem;
+}
+
+#women p {
+  margin: auto;
+  padding: 1rem;
+  padding-left: 1rem;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* sssssssssss */
 
 #woman p {
   padding: 3rem 3rem;
@@ -263,7 +308,8 @@ footer {
   height: 200px;
 }
 
-#women {
+#women,
+#woman {
   background: lightseagreen;
   height: 250px;
   width: 80%;
@@ -280,9 +326,10 @@ footer {
   padding: 3rem 3rem;
 }
 
-#women img {
+#women img,
+#woman img {
   border-radius: 100%;
-  width: 220px;
+  width: 250px;
   height: 210px;
 }
 
@@ -345,4 +392,418 @@ footer {
 
 #footer {
   font-size: 2rem;
+}
+
+/* responseive */
+
+/* ipad */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  nav h1 {
+    margin: auto;
+  }
+
+  nav ul li {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+  .showcase {
+    padding: 4rem;
+  }
+
+  .box h1 {
+    font-size: 2rem;
+    padding-bottom: 8rem;
+    margin-top: 1rem;
+  }
+
+  .container {
+    /* footer  */
+    font-size: 1rem;
+  }
+
+  .container .fas {
+    font-size: 3rem;
+  }
+
+  /* about  ipad */
+
+  .head h1 {
+    font-size: 3rem;
+    margin-left: -3rem;
+    margin-top: 2rem;
+  }
+
+  #about p {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 30rem;
+    margin-left: -4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #imag {
+    margin: 2rem 2rem 50rem -41rem;
+  }
+  #about img {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+  }
+
+  #content h3 {
+    font-size: 3rem;
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+  #woman p {
+    margin: auto;
+    padding: 1rem;
+    padding-left: 1rem;
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  /* WOMEN */
+
+  #women,
+  #woman {
+    flex-wrap: wrap;
+    height: 390px;
+    width: 98%;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  #woman img {
+    border-radius: 100%;
+    width: 180px;
+    height: 160px;
+    shape-outside: circle();
+    float: left;
+    padding: 0.8rem;
+    margin-right: 3rem;
+  }
+
+  #women img {
+    border-radius: 100%;
+    width: 180px;
+    height: 160px;
+    shape-outside: circle();
+    float: left;
+    padding: 0.3rem;
+    margin-right: 3rem;
+  }
+
+  #women p {
+    margin: auto;
+    padding: 1rem;
+    padding-left: 1rem;
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  /* #content {
+    padding-bottom: 5rem;
+  }
+
+  #content h3 {
+    font-size: 5rem;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  #woman,
+  #women {
+    background: lightseagreen;
+    height: 300px;
+    width: 94%;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: auto;
+    padding-left: 1rem;
+    margin-top: 60px;
+  }
+
+  #woman p,
+  #women p {
+    padding-top: 8rem;
+    padding-bottom: 9rem;
+  } */
+
+  /* contact page ipad */
+
+  .form {
+    font-size: 1.9rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-right: -3rem;
+  }
+  .form h1 {
+    font-size: 5rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+
+  .footer .fas {
+    font-size: 3rem;
+  }
+}
+
+/* iPHONE */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  /* home page iphone */
+
+  nav h1 {
+    margin: auto;
+    font-size: 1rem;
+  }
+
+  nav ul li {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  ul li a {
+    display: block;
+    text-align: center;
+    padding: 1px 1px;
+  }
+
+  .showcase {
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .showcase h3 {
+    font-size: 2.5rem;
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+  .showcase p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    margin-top: 25px;
+    padding: 1rem 1rem;
+    text-align: center;
+    border-radius: 9%;
+    font-size: 1.3rem;
+  }
+
+  .link {
+    height: 0;
+    width: 0%;
+  }
+
+  .box {
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    height: 550px;
+  }
+
+  .box h1 {
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+    font-size: 2rem;
+  }
+
+  .box p {
+    margin-top: -10rem;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .container {
+    font-size: 0.7rem;
+  }
+
+  .container .fas {
+    font-size: 1.7rem;
+  }
+
+  #location {
+    width: 33.33333333%;
+    left: 0;
+    text-align: center;
+    padding: 33.4;
+    background: #333;
+  }
+  #cats {
+    width: 33.3%;
+    text-align: center;
+    padding: 33.3px;
+    background: lightseagreen;
+  }
+  #books {
+    width: 33.3%;
+    text-align: center;
+    padding: 33.3px;
+    background: #333;
+  }
+
+  #location h1 {
+    margin-left: -1.3rem;
+  }
+
+  footer {
+    display: block;
+    background: #333;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+  }
+
+  /* about page iphone */
+
+  .head h1 {
+    font-size: 2.5rem;
+    margin-left: -5.3rem;
+    margin-top: 1rem;
+  }
+
+  #about {
+    margin: 0;
+    padding-left: 3rem;
+    align-content: center;
+  }
+
+  #about p {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 18rem;
+    padding-bottom: 4rem;
+    padding-right: 2.4rem;
+    font-weight: bold;
+  }
+
+  #imag {
+    margin: 2rem 2rem 1rem -27rem;
+  }
+  #about img {
+    border-radius: 100%;
+    width: 240px;
+    height: 240px;
+    shape-outside: circle();
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #content h3 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  #woman {
+    flex-wrap: wrap;
+    height: 290px;
+    width: 94%;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  #woman img {
+    border-radius: 100%;
+    width: 100px;
+    height: 90px;
+    shape-outside: circle();
+    float: left;
+    padding: 0.3rem;
+    margin-right: 1.2rem;
+  }
+
+  #woman p {
+    margin: auto;
+    padding: 1rem;
+    padding-left: 1rem;
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+
+  /* WOMEN */
+
+  #women {
+    flex-wrap: wrap;
+    height: 290px;
+    width: 94%;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  #women img {
+    border-radius: 100%;
+    width: 100px;
+    height: 90px;
+    shape-outside: circle();
+    float: left;
+    padding: 0.3rem;
+    margin-right: 1.2rem;
+  }
+
+  #women p {
+    margin: auto;
+    padding: 1rem;
+    padding-left: 1rem;
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+
+  /* contact iphone page */
+
+  .form {
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-right: 0rem;
+  }
+  .form h1 {
+    font-size: 3rem;
+    padding-right: 0.2rem;
+  }
+
+  .form p {
+    font-size: 1.4rem;
+    margin-left: -1rem;
+  }
+
+  .form #submit {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  #footer {
+    font-size: 1rem;
+  }
+
+  .footer .fas {
+    font-size: 3rem;
+  }
 }
